@@ -1,0 +1,10 @@
+import os
+from dotenv import load_dotenv
+import google.generativeai as genai
+
+# Load the secret key from the .env file
+load_dotenv()
+my_key = os.getenv("AIzaSyAgftoSJQeC5kdhpM8foOV66FgfUGGCvQY")
+
+# Configure the AI with your named key
+genai.configure(api_key=my_key)
